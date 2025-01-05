@@ -34,6 +34,7 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     color: #343a40;
+    font-family: "Open Sans", serif;
 }
 
 /*BACKGROUND*/
