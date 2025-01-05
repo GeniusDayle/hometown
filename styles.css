@@ -1,0 +1,209 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    max-width: 1500px;
+    min-width: 800px;
+    overflow-x: auto;
+}
+
+img {
+    width: 100px;
+    border-radius: 500px;
+    border: 2px solid whitesmoke; 
+}
+
+h3 {
+    padding: 10px;
+    margin: 0;
+    font-family: "Fuzzy Bubbles", serif;
+    color: #343a40;
+}
+
+.places_details, .food_details {
+    display: flex;
+    justify-content: space-evenly;
+    color: #343a40;
+}
+
+/*BACKGROUND*/
+.hero {
+    height: 300px;
+    background-image: url("images/capetown.jpg");
+    background-size: cover;
+}
+
+.places {
+    background: linear-gradient(#abc4ff,#ccdbfd);
+    margin: 0;
+    height: 300px;
+}
+
+.food {
+    background: linear-gradient(#ccdbfd,#e2eafc);
+    margin: 0;
+    height: 300px;
+}
+
+.guide {
+    background: linear-gradient(#e2eafc,white);
+    margin: 0;
+    height: 300px;
+}
+
+
+/*HERO DETAILS*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 50px;
+}
+
+h1 {
+    font-family: "Train One", serif;
+    font-weight: lighter;
+}
+
+h2 {
+    font-family: "Fuzzy Bubbles", serif;
+    font-weight: lighter;
+}
+
+h1, h2 {
+    margin: 0;
+    background-color: rgba(67, 97, 238, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+/*PLACE DETAILS*/
+.places_details img {
+    margin: 5px;
+}
+
+.places_details h4 {
+    margin: 5px;
+}
+
+.places_details p {
+    padding: 5px;
+    width: 200px;
+    margin: 5px;
+}
+
+
+/*FOOD DETAILS*/
+.food_details img {
+    margin: 5px;
+}
+
+.food_details h4 {
+    margin: 5px;
+}
+
+.food_details p {
+    padding: 5px;
+    width: 200px;
+    margin: 5px;
+}
+
+/*GUIDE DETAILS*/
+.guide_details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #343a40;
+}
+
+.profile {
+    width: 70%;
+    margin: 10px 0 10px 10px;
+    padding: 10px 0 10px 10px;
+}
+
+.profile_pic {
+    width: 30%;
+    box-shadow: ;
+    margin: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 0px;
+}
+
+/*HOVER EFFECTS*/
+.table_mountain:hover {
+    transform: scale(1.1);
+}
+
+.waterfront:hover {
+    transform: scale(1.1);
+}
+
+.robben_island:hover {
+    transform: scale(1.1);
+}
+
+.gatsby:hover {
+    transform: scale(1.1);
+}
+
+.bunny_chow:hover {
+    transform: scale(1.1);
+}
+
+.koeksister:hover {
+    transform: scale(1.1);
+}
+
+.table_mountain img:hover {
+    box-shadow: 0 0 10px rgba(253, 255, 182, 0.8), 
+                0 0 20px rgba(253, 255, 182,.6), 
+                0 0 30px rgba(253, 255, 182, 0.4);
+}
+
+.waterfront img:hover {
+    box-shadow: 0 0 10px rgba(253, 255, 182, 0.8), 
+                0 0 20px rgba(253, 255, 182,.6), 
+                0 0 30px rgba(253, 255, 182, 0.4);
+}
+
+.robben_island img:hover {
+    box-shadow: 0 0 10px rgba(253, 255, 182, 0.8), 
+                0 0 20px rgba(253, 255, 182,.6), 
+                0 0 30px rgba(253, 255, 182, 0.4);
+}
+
+.gatsby img:hover {
+    box-shadow: 0 0 10px rgba(253, 255, 182, 0.8), 
+                0 0 20px rgba(253, 255, 182,.6), 
+                0 0 30px rgba(253, 255, 182, 0.4);
+}
+
+.bunny_chow img:hover {
+    box-shadow: 0 0 10px rgba(253, 255, 182, 0.8), 
+                0 0 20px rgba(253, 255, 182,.6), 
+                0 0 30px rgba(253, 255, 182, 0.4);
+}
+
+.koeksister img:hover {
+    box-shadow: 0 0 10px rgba(253, 255, 182, 0.8), 
+                0 0 20px rgba(253, 255, 182,.6), 
+                0 0 30px rgba(253, 255, 182, 0.4);
+}
+
+.table_mountain, .waterfront, .robben_island, .gatsby, .bunny_chow, .koeksister, img {
+    transition: 0.5s ease-in-out;
+}
+
