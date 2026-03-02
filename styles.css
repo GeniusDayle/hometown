@@ -12,9 +12,6 @@ body {
     margin: 0;
     text-align: center;
     width: 100%;
-    max-width: 2500px;
-    min-width: 700px;
-    overflow-x: auto;
 }
 
 .places_details img {
@@ -30,14 +27,24 @@ body {
 }
 
 h3 {
-    padding: 10px;
+    padding: 20px;
     margin: 0;
     font-family: "Fuzzy Bubbles", serif;
     color: #343a40;
+    font-size: 20px;
 }
 
-.places_details, .food_details {
+.places_details {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #343a40;
+    font-family: "Open Sans", serif;
+}
+
+.food_details {
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     color: #343a40;
     font-family: "Open Sans", serif;
@@ -53,19 +60,19 @@ h3 {
 .places {
     background: linear-gradient(#abc4ff,#ccdbfd);
     margin: 0;
-    height: 300px;
+    padding: 0 20px;
 }
 
 .food {
     background: linear-gradient(#ccdbfd,#e2eafc);
     margin: 0;
-    height: 300px;
+    padding: 0 20px;
 }
 
 .guide {
     background: linear-gradient(#e2eafc,white);
     margin: 0;
-    height: 300px;
+    padding: 0 20px;
 }
 
 
@@ -81,11 +88,15 @@ h3 {
 h1 {
     font-family: "Train One", serif;
     font-weight: lighter;
+    font-size: 24px;
+    text-shadow: 0 0 2px black;
 }
 
 h2 {
     font-family: "Fuzzy Bubbles", serif;
     font-weight: lighter;
+    font-size: 16px;
+    text-shadow: 0 0 2px black;
 }
 
 h1, h2 {
@@ -108,7 +119,6 @@ h1, h2 {
 
 .places_details p {
     padding: 5px;
-    width: 200px;
     margin: 5px;
 }
 
@@ -124,7 +134,6 @@ h1, h2 {
 
 .food_details p {
     padding: 5px;
-    width: 200px;
     margin: 5px;
 }
 
@@ -135,44 +144,48 @@ h1, h2 {
     align-items: center;
     color: #343a40;
     font-family: "Open Sans", serif;
-    margin: 0 20px;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 
 .profile {
     width: 50%;
-    margin-right: 20px;
+}
+
+.profile_pic {
+    width: 50%;
 }
 
 .profile_pic img {
-    width: 250px;
+    width: 100%;
     border: 4px solid whitesmoke;
     border-radius: 500px;
-    margin-left: 20px;
 }
 
 /*HOVER EFFECTS*/
 .table_mountain:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .waterfront:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .robben_island:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .gatsby:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .bunny_chow:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .koeksister:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .table_mountain img:hover {
@@ -215,3 +228,79 @@ h1, h2 {
     transition: 0.5s ease-in-out;
 }
 
+@media (min-width: 768px) {
+    .places_details, .food_details {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        max-width: 600px;
+    }
+
+    h3 {
+        padding-top: 40px;
+    }
+    
+    .profile, .profile_pic {
+        width: 100%;
+    }
+
+    .hero {
+        background-position: 0, 50%;
+    }
+
+    .places_details {
+        width: 75%;
+        margin: 0 auto;
+        align-items:flex-start;
+    }
+
+    .food_details {
+        width: 75%;
+        margin: 0 auto;
+        align-items:flex-start;
+    }
+
+    .guide_details {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .profile_pic img {
+        max-width: 200px;
+    }
+
+    .places_details img {
+        width: 150px;
+    }
+
+    .food_details img {
+        width: 150px;
+    }
+
+    .places_details, .food_details {
+        border-bottom: #6c757d 2px solid;
+        border-width: 50%;
+        padding-bottom: 40px;
+    }
+
+    .guide_details {
+        padding-bottom: 40px;
+    }
+
+    .places_details > div,
+    .food_details > div {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        background-position: center 20%;
+    }
+}
